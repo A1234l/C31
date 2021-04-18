@@ -3,5 +3,6 @@ class Log extends BaseClass{
     super(x,y,20,height,angle);
     this.image = loadImage("sprites/wood2.png");
     Matter.Body.setAngle(this.body, angle);
+    Matter.Body.set(this.body, 'friction', 1.5);
   }
 }

@@ -17,10 +17,13 @@ class SlingShot{
     fly(){
         this.sling.bodyA = null;
     }
+    reattach(obj){
+        this.sling.bodyA = obj;
+    }
 
     display(){
-        image(this.sling1,200,70,38,150);
-        image(this.sling2,170,70,this.sling2.width,85);
+        image(this.sling1,200,110,38,150);
+        image(this.sling2,170,110,this.sling2.width,85);
         // console.log()
         // console.log(this.sling2.height);
         if(this.sling.bodyA){
